@@ -11,7 +11,6 @@ This re-trained ResNet-18 model was created on Jetson Nano and trained on a data
 4. Download then run the code in Visual Studios Code.
 5. Navigate to the jetson-inference directory and run the docker:
 ```
-$ cd ../../../../
 $ ./docker/run.sh
 ```
 6. Navigate to the classification directory again:
@@ -20,7 +19,7 @@ $ ./docker/run.sh
 ```
 7. Export the model to ONNX:
 ```
-   $ python3 onnx_export.py --model-dir=models/art_styles
+   $ python3 onnx_export.py --model-dir=models/rps
 ```
 8. Exit the docker by doing:
 ```
