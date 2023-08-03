@@ -2,7 +2,7 @@
  In this game, players upload pictures of their hand gestures to the dataset, and the AI robot responds with a randomized output, simulating the classic rock-paper-scissors experience. The AI's unpredictable responses add an element of excitement and intrigue to the gameplay. 
 
 # The Algorithm
-This re-trained ResNet-18 model was created on Jetson Nano and trained on a dataset of prairie rattlesnake images and garter snake images. It runs on an imagenet.py program that will classify the snake as either species.
+This re-trained ResNet-18 model was created on Jetson Nano and trained on a dataset of Rock, Paper and Scissors images. It runs on an imagenet.py program that will classify your hand gesture and reply with a random output to determine if you drew, won or lost.
 
 # Running This Project
 1. Make sure that both the Jetson Inference library and Python3 are installed on your Jetson Nano.
