@@ -6,7 +6,7 @@ This re-trained ResNet-18 model was created on Jetson Nano and trained on a data
 
 # Running This Project
 1. Make sure that both the Jetson Inference library and Python3 are installed on your Jetson Nano.
-2. Download the resnet18.onnx and model_best.pth.tar. Links to the models and data: (https://colab.research.google.com/drive/185Pi3YLl0lriWxVXuBzZiAF6xx5j2Tq7?usp=drive_link))
+2. Download the resnet18.onnx and model_best.pth.tar. Links to the models and data:(https://drive.google.com/drive/folders/1FruGAXi81CQoS5BPv7WosuzJQ-KyAEKy?usp=sharing)
 3. Then upload photos of your own hand in any one of the rock paper scissors position.
 4. Download then run the code in Visual Studios Code.
 5. Make sure you are in the proper folder:
