@@ -22,12 +22,11 @@ $ ./docker/run.sh
 ```
    $ python3 onnx_export.py --model-dir=models/art_styles
 ```
-8. Exit the docker and navigate to the classification directory again:
+8. Exit the docker by doing:
 ```
    $ exit
-   $ cd python/training/classification
 ```
-9. then make sure you go back to the proper folder:
+9. Then make sure you go back to the proper folder:
 ```
    $ cd jetson-inference/python/training/classification
 ```
