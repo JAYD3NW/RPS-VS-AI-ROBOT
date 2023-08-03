@@ -10,12 +10,12 @@ This re-trained ResNet-18 model was created on Jetson Nano and trained on a data
 3. Download the data folder (images). Link to data: ([https://drive.google.com/drive/u/0/folders/1gJKHu09UoMbe0EvLXrBIfYXrUDE_lXbs](https://colab.research.google.com/drive/185Pi3YLl0lriWxVXuBzZiAF6xx5j2Tq7?usp=drive_link))
 4. Or Upload photos of your hand in any one of the rock paper scissors position.
 5. Run the code in Visual Studios Code.
-7. Make sure your in the proper folder.
+6. Make sure your in the proper folder.
 ```
    $ cd jetson-inference/python/training/classification
 ```
-6. Adjust the following to the correct data set and picture name then run.
+7. Adjust the following to the correct data set and picture name then run.
 ```
    $ ./imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/rock/DS.jpg rps.jpg ```
 ```
-7. View video for explanation. 
+8. View video for explanation. 
