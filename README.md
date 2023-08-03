@@ -6,21 +6,39 @@ This re-trained ResNet-18 model was created on Jetson Nano and trained on a data
 
 # Running This Project
 1. Make sure that both the Jetson Inference library and Python3 are installed on your Jetson Nano.
-2. Download the resnet18.onnx and model_best.pth.tar. Links to the models and data:(https://drive.google.com/drive/folders/1FruGAXi81CQoS5BPv7WosuzJQ-KyAEKy?usp=sharing)
+2. Download the model_best.pth.tar. Links to the models and data:(https://drive.google.com/drive/folders/1FruGAXi81CQoS5BPv7WosuzJQ-KyAEKy?usp=sharing)
 3. Then upload photos of your own hand in any one of the rock paper scissors position.
 4. Download then run the code in Visual Studios Code.
-5. Make sure you are in the proper folder:
+5. Navigate to the jetson-inference directory and run the docker:
+```
+$ cd ../../../../
+$ ./docker/run.sh
+```
+6. Navigate to the classification directory again:
+```
+   $ cd python/training/classification
+```
+7. Export the model to ONNX:
+```
+   $ python3 onnx_export.py --model-dir=models/art_styles
+```
+8. Exit the docker and navigate to the classification directory again:
+```
+   $ exit
+   $ cd python/training/classification
+```
+9. then make sure you go back to the proper folder:
 ```
    $ cd jetson-inference/python/training/classification
 ```
-6. Set the net and data variables as shown below:
+10. Set the net and data variables as shown below:
 ```
    $ NET=models/rps
    $ DATASET=data/rps
 ```
-7. Adjust the following to the correct data set and picture name then run:
+11. Adjust the following to the correct data set and picture name then run:
 ```
    $ ./imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/rock/DS.jpg rps.jpg ```
 ```
-8. View video for explanation.
+12. View video for explanation.
 https://youtu.be/xfKSGxtsdvs
